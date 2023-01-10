@@ -15,6 +15,7 @@ let package = Package(
             targets: ["MathLib"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/mim-dev/AdditionCalculatorLibrary", from: "1.0.0")
     ],
     targets: [
         .binaryTarget(name: "MathLib", path: "./Sources/MathLib.xcframework")
