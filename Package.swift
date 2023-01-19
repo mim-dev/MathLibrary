@@ -12,12 +12,15 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MathLib",
-            targets: ["MathLib"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/mim-dev/AdditionCalculatorLibrary", from: "1.0.0")
+            targets: ["MathLibTargets"]),
     ],
     targets: [
         .binaryTarget(name: "MathLib", path: "./Sources/MathLib.xcframework")
+        .binaryTarget(name: "AdditionCalculator", path: "./Sources/AdditionCalculator.xcframework")
+        .target(name="MathLibTargets", dependencies:[
+        	.target(name:"MathLib", condition: .when(platforms: .some([.iOS])))
+        	.target(name:"AdditionCalculator", condition: .when(platforms: .some([.iOS])))
+        	], 
+        	path:".Sources/MathLibTargets")
     ]
 )
