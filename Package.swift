@@ -15,12 +15,12 @@ let package = Package(
             targets: ["MathLibTargets"]),
     ],
     targets: [
-        .binaryTarget(name: "MathLib", path: "./Sources/MathLib.xcframework")
-        .binaryTarget(name: "AdditionCalculator", path: "./Sources/AdditionCalculator.xcframework")
-        .target(name="MathLibTargets", dependencies:[
-        	.target(name:"MathLib", condition: .when(platforms: .some([.iOS])))
-        	.target(name:"AdditionCalculator", condition: .when(platforms: .some([.iOS])))
+        .binaryTarget(name: "MathLib", path: "./Sources/MathLib.xcframework"),
+        .binaryTarget(name: "AdditionCalculator", path: "./Sources/AdditionCalculator.xcframework"),
+        .target(name: "MathLibTargets", dependencies: [
+        	.target(name: "MathLib", condition: .when(platforms: [.iOS])),
+        	.target(name: "AdditionCalculator", condition: .when(platforms: [.iOS])),
         	], 
-        	path:".Sources/MathLibTargets")
+        	path:"./Sources/MathLibTargets")
     ]
 )
