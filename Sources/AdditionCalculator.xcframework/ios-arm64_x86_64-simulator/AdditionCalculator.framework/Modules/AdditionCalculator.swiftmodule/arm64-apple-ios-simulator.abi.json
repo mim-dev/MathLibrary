@@ -42,8 +42,8 @@
           },
           {
             "kind": "Function",
-            "name": "addIntOperands",
-            "printedName": "addIntOperands(operandOne:operandTwo:)",
+            "name": "addIntegerOperands",
+            "printedName": "addIntegerOperands(operandOne:operandTwo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -65,8 +65,41 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18AdditionCalculator5AdderC14addIntOperands10operandOne0G3TwoS2i_SitF",
-            "mangledName": "$s18AdditionCalculator5AdderC14addIntOperands10operandOne0G3TwoS2i_SitF",
+            "usr": "s:18AdditionCalculator5AdderC18addIntegerOperands10operandOne0G3TwoS2i_SitF",
+            "mangledName": "$s18AdditionCalculator5AdderC18addIntegerOperands10operandOne0G3TwoS2i_SitF",
+            "moduleName": "AdditionCalculator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addDoubleOperands",
+            "printedName": "addDoubleOperands(operandOne:operandTwo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AdditionCalculator5AdderC17addDoubleOperands10operandOne0G3TwoS2d_SdtF",
+            "mangledName": "$s18AdditionCalculator5AdderC17addDoubleOperands10operandOne0G3TwoS2d_SdtF",
             "moduleName": "AdditionCalculator",
             "declAttributes": [
               "AccessControl"

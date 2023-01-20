@@ -9,6 +9,7 @@ import _Concurrency
 import _StringProcessing
 public class Adder {
   public init()
-  public func addIntOperands(operandOne: Swift.Int, operandTwo: Swift.Int) -> Swift.Int
+  public func addIntegerOperands(operandOne: Swift.Int, operandTwo: Swift.Int) -> Swift.Int
+  public func addDoubleOperands(operandOne: Swift.Double, operandTwo: Swift.Double) -> Swift.Double
   @objc deinit
 }
